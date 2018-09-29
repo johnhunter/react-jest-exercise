@@ -1,8 +1,7 @@
 {
   "name": "tutorial-the-guardian-search-app",
   "version": "1.0.0",
-  "description":
-    "This repo is part of my tutorial I've written up on [how to test React components using Jest and Enzyme](#). There are 3 branches in this repo:",
+  "description": "This repo is part of my tutorial I've written up on [how to test React components using Jest and Enzyme](#). There are 3 branches in this repo:",
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -14,16 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/pinglinh/tutorial-the-guardian-search-app.git"
+    "url": "git+https://github.com/pinglinh/tutorial-the-guardian-search-app.git"
   },
   "author": "pinglinh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pinglinh/tutorial-the-guardian-search-app/issues"
   },
-  "homepage":
-    "https://github.com/pinglinh/tutorial-the-guardian-search-app#readme",
+  "homepage": "https://github.com/pinglinh/tutorial-the-guardian-search-app#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
