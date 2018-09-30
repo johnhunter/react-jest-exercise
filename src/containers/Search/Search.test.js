@@ -23,15 +23,16 @@ describe('Search Container', ()=>{
 
   it('updates articles state', ()=>{
     const wrapper = mount( <SearchContainer/> );
-    expect(wrapper.state().articles).toEqual([]);
+    const { performSearch, articles } = wrapper.find(Search).props();
 
-    // Grab the method passed to Search as a prop
-    const { performSearch } = wrapper.find(Search).props();
+    // Initial article list
+    expect(articles).toEqual([]);
 
     // Exercise mocked api call
     // Note: return promise so test waits for async response
     return performSearch().then(()=>{
-      expect(wrapper.state().articles).toHaveLength(10);
+      wrapper.update();
+      expect(wrapper.find(Search).props().articles).toHaveLength(10);
     })
   });
 
