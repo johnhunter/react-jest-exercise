@@ -24,13 +24,11 @@ describe("Search component", ()=>{
 
   it("cancels submit event when the form is submitted", ()=>{
     const wrapper = shallow( <Search /> );
-    let prevented = false;
+    const preventDefaultSpy = jest.fn();
     wrapper.find('form').simulate('submit', {
-      preventDefault: () => {
-        prevented = true;
-      }
+      preventDefault: preventDefaultSpy
     });
-    expect(prevented).toBe(true);
+    expect(preventDefaultSpy).toHaveBeenCalled();
   });
 
 });
