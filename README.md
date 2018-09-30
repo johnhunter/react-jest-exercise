@@ -1,10 +1,11 @@
 # react-jest-exercise
 
-Excercise based on [How to test React components using Jest and Enzyme](https://blog.bitsrc.io/how-to-test-react-components-using-jest-and-enzyme-fab851a43875).
+Exercise based on [How to test React components using Jest and Enzyme](https://blog.bitsrc.io/how-to-test-react-components-using-jest-and-enzyme-fab851a43875).
 
 Involves tests for a simple article search UI.
 
 - Testing components with Enzyme `shallow`
+- Mocking with Jest spies
 - Testing UI with Jest `snapshot`
 - Testing component hierarchies with Enzyme `mount`
 - Testing HOC and api with Jest `mock`
